@@ -1,0 +1,15 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    align-self: auto;
+}
+.header{
+    color: white
+}
+div{
+    background-color: aqua;
+    width:100%;
+    height:100vh;
+
+}
