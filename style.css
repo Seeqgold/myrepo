@@ -4,12 +4,147 @@
     box-sizing: border-box;
     align-self: auto;
 }
-.header{
-    color: white
-}
-div{
-    background-color: aqua;
+.home-page{
+    color: rgb(122, 106, 106);
     width:100%;
     height:100vh;
+    margin:2px;
+    padding: 5px;
+}
+nav{
+    background-color: white;
+    width:100%;
+    height:60px;
+}
+#logo{
+    height: 30px;
+    border-radius: 50%;
+    width:30px;
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-right: 960px;
+    float: left;
+    animation-name: logoimage;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-delay: 0s;
+ 
+}
+@keyframes logoimage {
+    from {transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+}
+ul{
+    list-style-type: none;
+    margin:0;
+    padding: 0;
+}
+.nav-link a{
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    padding: 20px;
+    margin-left:8px;
+    margin-top: 3px;
+    margin-right: 8px;
+    font-weight: bolder;
 
 }
+.nav-link{
+    float: left;}
+ .active{
+    background-color: rgb(167, 196, 167);
+}
+.nav-link a:hover:not(.active){
+    border: none;
+    border-radius: 13px;
+    background-image: linear-gradient(to bottom, white, rgb(141, 133, 133));
+    color: white;
+
+}
+.first-section{
+    width: 100%;
+    height:450px;
+    margin-top: 70px;
+    position: relative;
+}
+.welcome-gallery{
+    filter: grayscale(50%);
+    
+}
+/*.first-section::after{
+    content: "";
+    display: table;
+    clear: both;
+}*/
+.welcome-content{
+    position: absolute;
+    right:10%;
+    top: 200px;}
+.welcome-content h2{
+    margin-bottom: 10px;
+    font-size: 35px;
+    color: black;
+}
+.welcome-content h4{
+    margin-bottom: 15px;
+    font-size: 20px;
+
+}
+button{
+    margin: 6px;
+    border: none;
+    border-radius: 18px;
+    width: 40%;
+    height: 30px;
+    background-color: whitesmoke;
+}
+button:hover{
+    background-image: linear-gradient(to bottom, white, rgb(141, 133, 133));
+    color: white;
+}
+.product-div{
+    margin-top: 70px;
+    width: 100%;
+    height:450px;
+}
+.product-div h3{
+    text-align: center;
+    color: black;
+    font-size: 23px;
+}
+.product-list{
+    list-style-type: none;
+    float: left;
+
+}
+.product-list a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 19px;
+    color: black;
+    font-size: 19px;
+}
+a.current{
+    text-decoration:underline;}
+.product-list a:hover{
+    color: black;
+    text-decoration:underline;
+}
+#product-link{
+    margin-left: 39vw;
+    height: 30px;
+    width:100%
+}
+.product-item{
+    height: 150px;
+    width:200px;
+    background-color: burlywood;
+    margin-top: 28px;
+    display: inline-block;
+}
+
+
+
+ 
